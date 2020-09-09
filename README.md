@@ -2,10 +2,10 @@
 #  dyserver（仮）
 
 ## 利用方法
-1．docker を起動
+1. docker を起動  
 2. run.bat を実行
 3. localhost へアクセスし、利用する。
-4．2．のwindow にて、続行することで終了処理が行われる。
+4. 2．のwindow にて、続行することで終了処理が行われる。
 
 ※sqlが立ち上がるのに時間がかかる場合があるため、起動直後のエラーは数分待てば直る可能性あり。
 
@@ -35,11 +35,11 @@ bat : （実行初回時）詳細情報⇒実行
 
 --log-------------------------------------------
 
-20200909
-以前のDockerfileをベースに、sqlを追加してみた。
-    mysql:host=mysql
-    port=3306
-で接続出来るはず？
-127.0.0.1:3306で繋ぎたい場合、composeで繋げるのでなく同一コンテナで構築したりする必要あるっぽい？
-接続成功例：http://localhost/test/sqltest.php 
-接続失敗例：http://localhost/test/sqltest2.php 
+20200909  
+以前のDockerfileをベースに、sqlを追加してみた。  
+    mysql:host=mysql  
+    port=3306  
+で接続出来るはず？  
+127.0.0.1:3306で繋ぎたい場合、composeで繋げるのでなく同一コンテナで構築したりする必要あるっぽい？  
+接続成功例：http://localhost/test/sqltest.php   
+接続失敗例：http://localhost/test/sqltest2.php   

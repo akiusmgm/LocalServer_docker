@@ -6,8 +6,8 @@
 ini_set("display_errors", On);
 error_reporting(E_ALL);
 $dsn = 'mysql:host=mysql;port=3306;dbname=test_db;charset=utf8';
-$user = 'test';
-$password = 'test';
+$user = 'testuser';
+$password = 'testpassword';
 
 $db = new PDO($dsn,$user,$password);
 

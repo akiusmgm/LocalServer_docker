@@ -8,7 +8,7 @@ RUN apk --update add tzdata && \
     apk del tzdata && \
     rm -rf /var/cache/apk/*
 
-RUN apk add apache2 php7-apache2 php7-pdo php7-mysqli php7-pdo_mysql
+RUN apk add apache2 php7-apache2 php7-pdo php7-mysqli php7-pdo_mysql php7-json
 RUN sed -i -e "s/\#LoadModule cgi_module modules\/mod_cgi.so/LoadModule cgi_module modules\/mod_cgi.so/g" /etc/apache2/httpd.conf
 RUN sed -i -e "s/;date.timezone =/date.timezone = \"Asia\/Tokyo\"/g" /etc/php7/php.ini
 RUN apk add perl python3 py3-pip

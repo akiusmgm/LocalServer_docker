@@ -13,6 +13,7 @@ RUN sed -i -e "s/\#LoadModule cgi_module modules\/mod_cgi.so/LoadModule cgi_modu
 RUN sed -i -e "s/;date.timezone =/date.timezone = \"Asia\/Tokyo\"/g" /etc/php7/php.ini
 RUN apk add perl python3 py3-pip
 RUN pip3 install requests
+RUN apk add php7-session
 
 
 EXPOSE 80

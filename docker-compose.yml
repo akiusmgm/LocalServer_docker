@@ -12,7 +12,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - mysql4cbc6web:/var/lib/mysql
+      - akiusmgm_LS_mysql:/var/lib/mysql
       - ./mysql/initdb:/docker-entrypoint-initdb.d
       - ./mysql/conf:/etc/mysql/conf.d/
 
@@ -32,4 +32,4 @@ services:
       - mysql
 
 volumes:
-  mysql4cbc6web:
+  akiusmgm_LS_mysql:

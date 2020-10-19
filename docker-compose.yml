@@ -15,7 +15,9 @@ services:
       - akiusmgm_LS_mysql:/var/lib/mysql
       - ./mysql/initdb:/docker-entrypoint-initdb.d
       - ./mysql/conf:/etc/mysql/conf.d/
-
+      - ./mysql/log:/var/log/mysql
+      - ./mysql/data:/tmp/mysql_data
+      
   apache_php_py:
     build:
       context: .

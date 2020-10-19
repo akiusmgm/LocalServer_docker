@@ -1,2 +1,8 @@
 /symlink/*
 !/symlink/.gitkeep
+/mysql/data/*
+!/mysql/data/.gitkeep
+/mysql/log/*
+!/mysql/log/.gitkeep
+/mysql/initdb/*
+!/mysql/initdb/.gitkeep

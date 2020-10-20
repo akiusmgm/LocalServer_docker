@@ -14,7 +14,7 @@ RUN sed -i -e "s/;date.timezone =/date.timezone = \"Asia\/Tokyo\"/g" /etc/php7/p
 RUN apk add perl python3 py3-pip
 RUN pip3 install requests
 RUN apk add php7-session
-
+RUN sed -i -e "s/\AllowOverride None/AllowOverride All/g" /etc/apache2/httpd.conf
 
 EXPOSE 80
 CMD ["/usr/sbin/httpd", "-k", "start", "-f", "/etc/apache2/httpd.conf", "-D", "FOREGROUND"]
